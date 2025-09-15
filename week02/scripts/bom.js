@@ -26,3 +26,21 @@ list.addEventListener('click', function (e) {
     input.focus();
   }
 });
+
+input.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    const li = document.createElement('li');
+    const deleteButton = document.createElement('button');
+
+    li.textContent = input.value;
+    deleteButton.textContent = '❌';
+    deleteButton.classList.add('delete');
+
+    li.append(deleteButton);
+    list.append(li);
+
+    input.value = '';
+    input.focus();
+  }
+  input.focus();
+});

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Page | WDD131 - Rodolfo Recordon</title>
+  <meta name="author" content="Rodolfo Recordon">
+  <meta name="description" content="A country page created for a BYU-I WDD131 class assignment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Brazil</h1>
+  </header>
+  <main>
+    <img srcset="images/brazil-small.webp 480w, 
+                images/brazil-large.webp 800w" sizes="(max-width: 600px) 480px, 
+               800px" src="brazil-large.webp" alt="rio de janeiro images">
+    <div class="data-section">
+      <h2>Data</h2>
+      <div>
+        <label for="area"><b>Area:</b></label>
+        <p>8,515,767 sq km</p>
+      </div>
+      <div>
+        <label for="population"><b>Population:</b></label>
+        <p>218.6 million</p>
+      </div>
+      <div>
+        <label for="capital"><b>Capital:</b></label>
+        <p>Brasília</p>
+      </div>
+      <div>
+        <label for="language"><b>Language:</b></label>
+        <p>Portuguese</p>
+      </div>
+      <div>
+        <label for="currency"><b>Currency:</b></label>
+        <p>Brazilian Real (BRL)</p>
+      </div>
+      <div>
+        <label for="time-zone"><b>Time Zone:</b></label>
+        <p>UTC-3</p>
+      </div>
+      <div>
+        <label for="calling-code"><b>Calling Code:</b></label>
+        <p>+55</p>
+      </div>
+      <div>
+        <label for="internet-tld"><b>Internet TLD:</b></label>
+        <p>.br</p>
+      </div>
+    </div>
+    <hr>
+    <div class="weather-section">
+      <h2>Weather</h2>
+      <img src="images/cloudy-weather.svg" alt="partialy weather icon">
+      <div>
+        <label for="temperature"><b>Temperature:</b></label>
+        <p id="temperature"></p>
+      </div>
+      <div>
+        <label for="conditions"><b>Conditions:</b></label>
+        <p>Partly Cloudy</p>
+      </div>
+      <div>
+        <label for="wind"><b>Wind:</b></label>
+        <p id="wind-speed"></p>
+      </div>
+      <div>
+        <label for="wind-chill"><b>Wind Chill:</b></label>
+        <p id="wind-chill"></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Rodolfo Recordon | Brazil/Portugal</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

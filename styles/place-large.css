@@ -1,0 +1,63 @@
+@media screen and (min-width: 1000px) {
+  main {
+    position: relative;
+  }
+
+  .data-section,
+  .weather-section {
+    position: absolute;
+  }
+
+  .data-section {
+    top: 3rem;
+    left: 3rem;
+    background-color: var(--yellowish-green);
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    opacity: 0.9;
+  }
+
+  .data-section h2,
+  .weather-section h2 {
+    padding: 1rem;
+    margin-left: -1.5rem;
+    width: 100%;
+    text-align: left;
+    background-color: var(--light-green);
+  }
+
+  .data-section div {
+    margin-left: -0.2rem;
+  }
+
+  .weather-section {
+    right: 2rem;
+    bottom: 2rem;
+    background-color: var(--yellowish-green);
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    opacity: 0.9;
+  }
+
+  .weather-section img {
+    display: none;
+  }
+
+  .weather-section h2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .weather-section h2::after {
+    content: '';
+    background-image: url('../images/cloudy-weather.svg');
+    background-repeat: no-repeat;
+    height: 3rem;
+    margin-left: 2rem;
+  }
+
+  hr {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Mono', monospace;
+}
+
+main {
+  margin: 1rem;
+}
+
+/* Table Specific */
+table {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 0.4rem 0.7rem;
+}
+
+table thead {
+  background-color: #000;
+  color: #fff;
+}
+
+thead tr:last-child {
+  background-color: #383838;
+}
+
+thead tr:last-child th:first-child {
+  background-color: #000;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ededed;
+}
+
+tbody tr th,
+tbody tr td {
+  border-left: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+tbody tr td:last-child {
+  border-right: 1px solid #d3d3d3;
+}
+
+caption {
+  caption-side: bottom;
+  font-size: 0.7rem;
+  margin-top: 10px;
+}

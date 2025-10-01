@@ -2,7 +2,7 @@
   --light-text: #eaeaea;
   --dark-text: #000;
   --light-bg: #ffefe2;
-  --dark-bg: #303800;
+  --dark-bg: rgb(48, 56, 0);
   --max-width: 1100px;
 }
 
@@ -52,6 +52,7 @@ main h2 {
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 10px rgb(48, 56, 0, 0.4);
 }
 
 .res-grid section h3 {

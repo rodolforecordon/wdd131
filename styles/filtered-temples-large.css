@@ -1,0 +1,35 @@
+@media screen and (min-width: 663px) {
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    position: static;
+    display: flex;
+    background-color: var(--dark-bg);
+    margin-right: 1rem;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation a {
+    padding: 1rem;
+    color: var(--light-text);
+  }
+
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-container {
+    max-width: var(--max-width);
+  }
+}

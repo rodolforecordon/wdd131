@@ -1,7 +1,7 @@
 // Footer dates
 const currentYear = new Date().getFullYear();
 
-const date = new Date('2025-09-06 10:56:34');
+const date = new Date('2025-10-01 23:35:34');
 const options = {
   hour12: false,
 };
@@ -11,7 +11,7 @@ const currentYearSpan = document.getElementById('currentyear');
 currentYearSpan.textContent = currentYear;
 
 const lastModifiedSpan = document.getElementById('lastModified');
-lastModifiedSpan.textContent = `Last Modified: ${lastModifiedDate}`;
+lastModifiedSpan.textContent = `Last Modified: ${lastModifiedDate} (Sorry it was late!)`;
 
 // Hamburger Menu
 const mainnav = document.querySelector('.navigation');

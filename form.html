@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rodolfo Recordon">
+  <meta name="description" content="Page is part of an assignment for BYU-I WDD131 class.">
+  <title>Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+  <main>
+    <form action="review.html" method="get">
+      <fieldset class="form-input">
+        <label for="product-name">Product Name</label>
+        <select id="product-name" name="product-name" required>
+          <option value="" disabled selected>Select a Product</option>
+        </select>
+      </fieldset>
+      <fieldset class="radio-buttons">
+        <legend>Overall Rating</legend>
+        <div class="radio-option">
+          <label for="one-star">&star;</label>
+          <input type="radio" name="rating" id="one-star" value="1" required>
+        </div>
+        <div class="radio-option">
+          <label for="two-star">&star;&star;</label>
+          <input type="radio" name="rating" id="two-star" value="2" required>
+        </div>
+        <div class="radio-option">
+          <label for="three-star">&star;&star;&star;</label>
+          <input type="radio" name="rating" id="three-star" value="3" required>
+        </div>
+        <div class="radio-option">
+          <label for="four-star">&star;&star;&star;&star;</label>
+          <input type="radio" name="rating" id="four-star" value="4" required>
+        </div>
+        <div class="radio-option">
+          <label for="five-star">&star;&star;&star;&star;&star;</label>
+          <input type="radio" name="rating" id="five-star" value="5" required>
+        </div>
+      </fieldset>
+      <fieldset class="form-input">
+        <label for="installation">Date of Installation</label>
+        <input type="date" name="installation" id="installation" required>
+      </fieldset>
+      <fieldset class="form-input">
+        <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
+        <div class="checkbox">
+          <input type="checkbox" name="features" id="durability" value="durability">
+          <label for="durability">Durability</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="features" id="ease-of-use" value="ease-of-use">
+          <label for="ease-of-use">Ease of Use</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="features" id="performance" value="performance">
+          <label for="performance">Performance</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="features" id="design" value="design">
+          <label for="design">Durability</label>
+        </div>
+      </fieldset>
+      <fieldset class="form-input">
+        <label for="written-review">Written Review (Optional)</label>
+        <textarea id="written-review" name="written-review" rows="6"></textarea>
+      </fieldset>
+      <fieldset class="form-input">
+        <label for="username">Your Name (Optional)</label>
+        <input type="text" id="username" name="username">
+      </fieldset>
+      <input type="submit" value="Post Review" class="submit-btn">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Rodolfo Recordon | Brazil/Portugal</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

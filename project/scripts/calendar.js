@@ -13,9 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     date: new Date(act.date),
   }));
 
-  // Sort activities by date
-  processedActivities.sort((a, b) => a.date - b.date);
-
   const tableBody = document.getElementById('activities-table');
 
   if (tableBody) {
